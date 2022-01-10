@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+  <style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap');
+</style>
+ </head>
+ <body>
+
+
+
+<form action="action_page.php">
+  <div class="container">
+   	<p style="font-family: 'Inter',sans-serif;">Регистрация</p>
+    <p>Заполните указанные поля для создания аккаунта.</p>
+    <hr>
+
+    <label for='FIO'><b>ФИО</b></label>
+    <input type="text" placeholder="Введите ФИО" name = 'FIO' id="FIO" required>
+
+    <label for='pasport'><b>Паспортные данные</b></label>
+    <input type="text" placeholder="Введите Серию паспорта" name = 'serial' id="pasport" required>
+    <input type="text" placeholder="Введите номер паспорта" name = 'number' id ="pasport"> 
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Введите свой email" name="email" id="email" required>
+
+    <label for="psw"><b>Пароль</b></label>
+    <input type="password" placeholder="Введите пароль" name="psw" id="psw" required>
+
+    <label for="psw-repeat"><b>Пароль снова</b></label>
+    <input type="password" placeholder="Повторите пароль" name="psw-repeat" id="psw-repeat" required>
+    <hr>
+
+    <button type="submit" class="registerbtn">Register</button>
+  </div>
+
+  <div class="container signin">
+    <p>Уже есть аккаунт? <a href="./login.html">Войти</a>.</p>
+  </div>
+</form>
+
+  <p>...</p>
+ </body>
+</html>
